@@ -5,25 +5,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
-
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+   
     <title>Hey! Market</title>
 
-    
+
     <style>
-         #carouselExample {
+        /* Navigation bar styling */
+        .navbar {
+            background-color: #343a40 !important;
+            /* Dark background color */
+            color: #fff;
+            /* Text color */
+            padding: 15px 0;
+            /* Adjust top and bottom padding */
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-toggler {
+            border-color: #fff;
+            /* Color of the toggle button */
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 5px;
+            /* Adjust space between buttons */
+        }
+
+        .navbar-nav .nav-link {
+            background-color: #007bff;
+            /* Button background color */
+            color: #fff;
+            border: 1px solid #007bff;
+            /* Button border color */
+            border-radius: 5px;
+            /* Button border radius */
+            padding: 8px 15px;
+            /* Adjust button padding */
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            background-color: #0056b3;
+            /* Hover/Active background color */
+            color: #fff;
+        }
+
+        .dropdown-menu {
+            background-color: #343a40;
+            /* Dark background color for dropdown */
+        }
+
+        .dropdown-item {
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .dropdown-item:hover {
+            color: #17a2b8;
+            /* Hover color for dropdown items */
+        }
+
+        /* Search and Login/Register buttons */
+        .form-control {
+            background-color: #495057;
+            /* Input field background color */
+            color: #fff;
+            border-color: #495057;
+        }
+
+        .btn-outline-success {
+            border-color: #28a745;
+            color: #28a745;
+        }
+
+        .btn-outline-success:hover {
+            background-color: #28a745;
+            /* Hover background color */
+            color: #fff;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            margin-left: 10px;
+            /* Adjust space between buttons */
+        }
+        
+        #carouselExample {
+    width: 60%; /* Adjust the width as needed */
+    margin: auto;
+}
+
+
+      
+        #carouselExample {
             background: url(a.gif);
             position: relative;
             overflow: hidden;
             width: 100%;
-            height: 100vh; /* Adjust as needed */
+            height: 100vh;
+            /* Adjust as needed */
             background-size: cover;
         }
 
@@ -39,160 +130,301 @@
             object-fit: cover;
         }
 
-        #Section01 h3 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .card {
-        height: 100%; /* Set the height of the card */
-    }
-
-    .card-img-top {
-        height: 200px; /* Set the height of the card image */
-        object-fit: cover; /* Ensure the image covers the entire space allocated */
-    }
-
-    /* Dark-themed Footer */
-footer {
-     background-color: #343a40; /* Dark background color */
-     color: #ffffff; /* Light text color */
-     padding: 30px 0;
-     position: relative;
-     bottom: 0;
-     width: 100%;
-     }
-            
-/* Copyright text styling */
-footer p {
-    margin: 0;
-    font-size: 14px;
-    opacity: 0.8; /* Adjust the opacity for a subtle effect */
+        #Section01 {
+            padding-top: 40px;
+            background-color: #f8f9fa;
         }
-            
-/* Cool Hover Effect for Copyright Text */
-footer p:hover {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-    }
+
+        #Section01 h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .row.text-center {
+            justify-content: center;
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            color: #666;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ffffff;
+            padding: 30px 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        footer:hover {
+            background-color: #111;
+            /* Darker background color on hover */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        footer p:hover {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Additional styling for decorative border */
+        .decorative-border {
+            border-top: 1px solid #fff;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+        #Section02 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #f8f9fa;
+            /* Light gray background color */
+        }
+
+        #Section02 h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #Section02 .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #Section02 .row {
+            justify-content: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #Section02 .col {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #Section02 .card {
+            width: 18rem;
+            background-color: #fff;
+            /* White background color for cards */
+            border: 1px solid #e1e1e1;
+            /* Light gray border */
+            border-radius: 8px;
+            /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Card shadow */
+            margin: 0 auto;
+            /* Center the card */
+        }
+
+        #Section02 .card img {
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        #Section02 .card-body {
+            padding: 20px;
+        }
+
+        #Section02 .card-title {
+            font-size: 1.25rem;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        #Section02 .card-text {
+            color: #666;
+        }
+
+        #Section02 .btn-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+            color: #fff;
+        }
+
+        #Section02 .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        
+        h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
     </style>
+
+
     <script>
-         $(document).ready(function(){
-            $("#myInput").on("keyup", function(){
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function(){
+                $("#myTable tr").filter(function() {
                     const rowText = $(this).text().toLowerCase();
                     $(this).toggle(rowText.indexOf(value) > -1)
                 })
             })
-         })
+        })
+
     </script>
 </head>
 
 <body>
-    <!--Navbar-->
-   
+
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hey! Market</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Cart</a></li>
-                  <li><a class="dropdown-item" href="#">Your Orders</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Career</a></li>
+            <a class="navbar-brand" href="#">Hey! Market</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                            <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Career</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" id="myInput" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
 
-    <!--Caraousel-->
-    
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
+                <!-- Relevant Fields for Search -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" id="myInput" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
 
-
-<!--Cards-->
-<div id="Section01" class="container" style="padding-top: 20px;">
-    <h3>Trending Items</h3>
-    <div class="row text-center">
-        <div class="col-md-3">
-            <div class="card">
-                <img src="./elec.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-lightning-fill"></i> Electronics</h5>
-                    <p class="card-text">Browse the latest electronic gadgets.</p>
-                    <a href="#" class="btn btn-primary">Explore</a>
+                <!-- Login/Register Buttons -->
+                <div class="d-flex align-items-center ms-3">
+                    <button class="btn btn-primary me-2">Login</button>
+                    <button class="btn btn-secondary">Register</button>
                 </div>
             </div>
         </div>
+    </nav>
 
-        <div class="col-md-3">
-            <div class="card">
-                <img src="./cloth.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-shirt"></i> Clothing</h5>
-                    <p class="card-text">Discover trendy fashion items for every occasion.</p>
-                    <a href="#" class="btn btn-primary">Explore</a>
+
+
+  
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+  
+        <!-- Add more carousel items as needed -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+    <div id="Section01" class="container" style="padding-top: 20px;">
+        <h3>TRENDING ITEMS</h3>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./elec.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-lightning-fill"></i> Electronics</h5>
+                        <p class="card-text">Browse the latest electronic gadgets.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-3">
-            <div class="card">
-                <img src="./home.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-house"></i> Home & Furniture</h5>
-                    <p class="card-text">Find stylish furniture and home decor items.</p>
-                    <a href="#" class="btn btn-primary">Explore</a>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./cloth.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-shirt"></i> Clothing</h5>
+                        <p class="card-text">Discover trendy fashion items for every occasion.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-3">
-            <div class="card">
-                <img src="./sport.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-basketball"></i> Sports & Outdoors</h5>
-                    <p class="card-text">Get ready for adventure with sports equipment and outdoor gear.</p>
-                    <a href="#" class="btn btn-primary">Explore</a>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./home.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-house"></i> Home & Furniture</h5>
+                        <p class="card-text">Find stylish furniture and home decor items.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./sport.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-basketball"></i> Sports & Outdoors</h5>
+                        <p class="card-text">Get ready for adventure with sports equipment and outdoor gear.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,86 +432,81 @@ footer p:hover {
 
     <br><br><br>
     <h3>Frequently asked questions</h3>
-    <!--Accordian => if you want to perform some action from the user-->
     <div id="Section03" class="container" style="padding-top: 50px;">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    How do I make a purchase?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    To make a purchase, simply browse through our wide selection of products using the search bar or category filters. Once you find an item you like, click on it to view more details. Then, select the quantity and any variations (e.g., size or color) if applicable, and click "Add to Cart." When you're ready to complete your purchase, proceed to the checkout page, where you can review your order, enter shipping and payment information, and confirm your purchase.
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How do I make a purchase?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        To make a purchase, simply browse through our wide selection of products using the search bar or category filters. Once you find an item you like, click on it to view more details. Then, select the quantity and any variations (e.g., size or color) if applicable, and click "Add to Cart." When you're ready to complete your purchase, proceed to the checkout page, where you can review your order, enter shipping and payment information, and confirm your purchase.
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What are the shipping options and delivery times?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    We offer several shipping options to accommodate your needs. Standard shipping typically takes [X] days to deliver, while expedited shipping options are available for faster delivery. Delivery times may vary depending on your location and the shipping method selected. Once your order is shipped, you'll receive a tracking number to monitor the status of your delivery.
-                 </div>
-              </div>
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What are the shipping options and delivery times?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We offer several shipping options to accommodate your needs. Standard shipping typically takes [X] days to deliver, while expedited shipping options are available for faster delivery. Delivery times may vary depending on your location and the shipping method selected. Once your order is shipped, you'll receive a tracking number to monitor the status of your delivery.
+                    </div>
+                </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How do I return or exchange an item?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    We want you to be completely satisfied with your purchase. If you're not happy with your item for any reason, you can initiate a return or exchange within [X] days of receiving your order. Simply log in to your account, go to your order history, and select the item you wish to return or exchange. Follow the instructions provided to generate a return label and ship the item back to us. Once we receive the returned item, we'll process your refund or exchange promptly.
-                 </div>
-              </div>
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do I return or exchange an item?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We want you to be completely satisfied with your purchase. If you're not happy with your item for any reason, you can initiate a return or exchange within [X] days of receiving your order. Simply log in to your account, go to your order history, and select the item you wish to return or exchange. Follow the instructions provided to generate a return label and ship the item back to us. Once we receive the returned item, we'll process your refund or exchange promptly.
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
-
-
-    <!--Cofounders section-->
 
     <br><br><br>
     <h3>Founders</h3>
-    <div id="Section01" class="container" style="padding-top: 50px;">
+    <div id="Section02" class="container" style="padding-top: 50px;">
         <div class="row">
-           
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="abhi.png" class="card-img-top" style="width: 100%; height: 200px;" alt="Abhishek">
-                        <div class="card-body">
-                            <h5 class="card-title">Abhishek Singh</h5>
-                            <p class="card-text">Ex-LTIMindtree worked as a data engineer.Proficient in DSA, database and python.</p>
-                            <a href="#" class="btn btn-primary">Look more</a>
-                        </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="abhi.png" class="card-img-top" style="width: 100%; height: 200px;" alt="Abhishek">
+                    <div class="card-body">
+                        <h5 class="card-title">Abhishek Singh</h5>
+                        <p class="card-text">Ex-LTIMindtree worked as a data engineer.Proficient in DSA, database and python.</p>
+                        <a href="#" class="btn btn-primary">Look more</a>
                     </div>
                 </div>
-            
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="Utkarsh.jpeg" class="card-img-top" style="width: 100%; height: 200px;" alt="Utkarsh">
-                        <div class="card-body">
-                            <h5 class="card-title">Utkarsh Bharadia</h5>
-                            <p class="card-text">Ex-Amazon as a software engineer.Proficient in Backend development.</p>
-                            <a href="#" class="btn btn-primary">Look more</a>
-                        </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="Utkarsh.jpeg" class="card-img-top" style="width: 100%; height: 200px;" alt="Utkarsh">
+                    <div class="card-body">
+                        <h5 class="card-title">Utkarsh Bharadia</h5>
+                        <p class="card-text">Ex-Amazon as a software engineer.Proficient in Backend development.</p>
+                        <a href="#" class="btn btn-primary">Look more</a>
                     </div>
                 </div>
-            
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PathakJi.jpeg" class="card-img-top" style="width: 100%; height: 200px;" alt="Placeholder Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Adarsh Pathak</h5>
-                            <p class="card-text">Ex-TCS as a software engineer. Proficient in Java, spring and Data Structure Algorithm.</p>
-                            <a href="#" class="btn btn-primary">Look more</a>
-                        </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="PathakJi.jpeg" class="card-img-top" style="width: 100%; height: 200px;" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Adarsh Pathak</h5>
+                        <p class="card-text">Ex-TCS as a software engineer. Proficient in Java, spring and Data Structure Algorithm.</p>
+                        <a href="#" class="btn btn-primary">Look more</a>
                     </div>
                 </div>
             </div>
@@ -287,16 +514,18 @@ footer p:hover {
 
 
 
- <footer class="mt-5">
-        <div class="container text-center">
-            <p>&copy; 2024 Hey! Market. All rights reserved.</p>
-        </div>
-    </footer>
 
 
+
+            <footer class="mt-5">
+                <div class="container text-center">
+                    <p>&copy; 2024 Hey! Market. All rights reserved.</p>
+                </div>
+            </footer>
+
         </div>
-    </div>    
-        
+
+    </div>
 
 </body>
 
