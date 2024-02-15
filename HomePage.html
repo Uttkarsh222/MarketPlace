@@ -294,19 +294,6 @@
 
     </style>
 
-
-    <script>
-        $(document).ready(function() {
-            $("#myInput").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function() {
-                    const rowText = $(this).text().toLowerCase();
-                    $(this).toggle(rowText.indexOf(value) > -1)
-                })
-            })
-        })
-
-    </script>
 </head>
 
 <body>
@@ -355,8 +342,8 @@
 
                 <!-- Login/Register Buttons -->
                 <div class="d-flex align-items-center ms-3">
-                    <button class="btn btn-primary me-2">Login</button>
-                    <button class="btn btn-secondary">Register</button>
+                    <button class="btn btn-primary me-2" href="Login.html" >Login</button>
+                    <button class="btn btn-secondary" href="signup.html">Register</button>
                 </div>
             </div>
         </div>
@@ -370,14 +357,6 @@
   
         <!-- Add more carousel items as needed -->
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
 </div>
 
 
