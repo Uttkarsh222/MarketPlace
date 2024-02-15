@@ -65,6 +65,7 @@ function validateField(field) {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         alert('Form submitted successfully!');
+        window.location.href = 'HomePage.html';
         inputs.forEach(input => {
             input.value = '';
             const messageElement = document.getElementById(`${input.id}Validation`);
